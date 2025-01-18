@@ -7,13 +7,29 @@ int main() {
     float pib;
     int ponto_turistico;
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+     printf("Bem-vindo ao Super Trunfo - Países!\n");
+
+    printf("Digite o código da cidade (ex: A01): ");
+    scanf("%s", codigo);
+
+    printf("Digite a população: ");
+    scanf("%d", &populacao);
+
+    printf("Digite a área (km²): ");
+    scanf("%f", &area);
+
+    printf("Digite o PIB (em bilhões): ");
+    scanf("%f", &pib);
+
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &ponto_turistico);
+
+    printf("\nDados da cidade cadastrada:\n");
+    printf("Código: %s\n", codigo);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões\n", pib);
+    printf("Pontos turísticos: %d\n", ponto_turistico);
 
     return 0;
 }
